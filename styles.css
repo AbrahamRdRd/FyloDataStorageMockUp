@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@media (max-width: 1440px){
+
+    :root{
+        /*---  Colors  ----*/
+
+             /*--- Primary ----*/
+
+        --Gradient: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+
+              /*--- Neutral ----*/
+
+        --Pale-Blue: hsl(243, 100%, 93%);
+        --Grayish-Blue: hsl(229, 7%, 55%);
+        --Dark-Blue: hsl(228, 56%, 26%);
+        --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+    }
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 33% 34% 23% 10%;
+        align-items: center;
+
+
+        height: 768px;
+        width: 1024px;
+
+        background-color: var(--Very-Dark-Blue);
+        background-image: url("./images/bg-desktop.png");
+        background-repeat: no-repeat;
+        background-size: auto 55%;
+        background-position: 0px 100%;
+        /*object-fit: contain; */
+    }
+
+    div:nth-child(2){
+        color: var(--Pale-Blue);
+        justify-content: center;
+    }
+
+    .storage-info-container{
+        width: 456px;
+        height: 80px;
+        border-radius: 10px; 
+        padding: 30px 25px 30px 25px;
+        margin-top: 300px;
+        margin-bottom: 300px;
+        background-color: var(--Dark-Blue);
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        color: var(--Pale-Blue);
+
+        position: relative;
+        top: -12px; left: 100px;
+
+        grid-column-start: 4;
+        grid-row-start: 2;
+
+    }
+
+    .storage-info-container p{
+        margin: 6px 0 16px 0;
+
+    }
+
+    .line-storage1{
+        width: 200px;
+        height: 12px;
+        border-radius: 15px;
+        background:  linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+        /*background-color: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%); */
+    }
+
+    .line-storage2{
+        width: 258px;
+        height: 12px;
+        border-radius: 15px;
+        background:  var(--Very-Dark-Blue);
+        /* background-color: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%); */
+        position: relative;
+        top: -12px; left: 198px;
+    }
+
+    .line-storage3{
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background:  var(--Pale-Blue);
+        /* background-color: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%); */
+        position: relative;
+        top: -25px; left: 192px;
+
+        cursor: pointer;
+    }
+
+    .base-line{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -24px; 
+
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .attribution { 
+        font-size: 16px; 
+        text-align: center; 
+        font-family: 'Raleway', sans-serif;
+
+        color: var(--Pale-Blue);
+
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .attribution a { 
+        color: var(--Grayish-Blue); 
+    }
+
+    .space-left {
+        position: absolute; 
+        left: 19em; 
+        top: -1.5em; 
+
+        width: 120px;
+        height: 42px;
+        padding: 12px 8px 8px 8px;
+        background-color: white;
+
+        color: var(--Very-Dark-Blue);
+        font-size: 18px; 
+
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .space-left p{
+        font-size: 32px; 
+        font-weight: 700;
+        color: var(--Very-Dark-Blue);
+        margin-left: 10px;
+    }
+
+    .space-left p:nth-child(2){
+        font-size: 10px; 
+        color: var(--Grayish-Blue);
+        margin: auto;
+    }
+
+    .space-left::after {
+        content: "";
+        position: absolute;
+        top: 48px;
+        left: 108px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+        border-width: 33px 0px 16px 28px;
+    }
+
+    .fylo-info{
+        width: 350px;
+        height: 180px;
+        margin-bottom: 64px;
+        margin-left: 130px;
+        border-radius: 10px 100px 10px 10px;
+
+        background-color: var(--Dark-Blue);
+
+        grid-column-end: 3;
+        grid-row-start: 2;
+
+        display: grid;
+        grid-template-columns: 10% 10% 5% 10% 5% 10% 10% 40%;
+        grid-template-rows: 20% 20% 20% 20% 20%;  
+
+    }
+
+    .fylo-info img:nth-child(1){
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .fylo-info img:nth-child(2){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        align-self: center;
+        justify-self: center;
+
+        padding-top: 12px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+        margin-left: 8px;
+    
+        background-color: var(--Very-Dark-Blue);
+    }
+
+    .fylo-info img:nth-child(3){
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        align-self: center;
+        justify-self: center;
+
+        padding-top: 9px;
+        padding-right: 12px;
+        padding-bottom: 9px;
+        padding-left: 12px;
+        border-radius: 10px;
+        margin-left: 8px;
+    
+        background-color: var(--Very-Dark-Blue);
+    }
+
+    .fylo-info img:nth-child(4){
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 4;
+        align-self: center;
+        justify-self: center;
+
+        padding-top: 13px;
+        padding-right: 11px;
+        padding-bottom: 13px;
+        padding-left: 11px;
+        border-radius: 10px;
+        margin-left: 10px;
+
+        background-color: var(--Very-Dark-Blue);
+    }
+
+    .fylo-info img:nth-child(1),
+    .fylo-info img:nth-child(2),
+    .fylo-info img:nth-child(3),
+    .fylo-info img:nth-child(4){
+        cursor: pointer;
+    }
+
+}   

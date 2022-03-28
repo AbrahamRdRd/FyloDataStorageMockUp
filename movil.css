@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@media (max-width: 375px){
+    :root{
+        /*---  Colors  ----*/
+
+             /*--- Primary ----*/
+
+        --Gradient: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+
+              /*--- Neutral ----*/
+
+        --Pale-Blue: hsl(243, 100%, 93%);
+        --Grayish-Blue: hsl(229, 7%, 55%);
+        --Dark-Blue: hsl(228, 56%, 26%);
+        --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+    }
+
+    body{
+        width: 23.5rem;
+        height: 50.75rem;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+
+        background-color: var(--Very-Dark-Blue);
+        background-image: url("./images/bg-desktop.png");
+        background-size: 150% 95%;
+    }
+
+    .fylo-info{
+        margin-left: 14px;
+        margin-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        justify-self: stretch;
+        grid-column-start: 1;
+        grid-row: 2/3;
+
+        display: grid;
+        grid-template-columns: 10% 10% 5% 10% 5% 10% 20% 30%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+
+    .fylo-info img:nth-child(1){
+        width: 148px;
+        margin-top: -14px;
+    }
+
+    .fylo-info img:nth-child(2){
+        width: 32px;
+        
+    }
+
+    .fylo-info img:nth-child(3){
+        width: 26px;
+        margin-left: 26px;
+    }
+
+    .fylo-info img:nth-child(4){
+        width: 34px;     
+    }
+
+    .storage-info-container{
+        grid-column: 1/2;
+        grid-row: 3;
+
+        width: 300px;
+        position: relative;
+        left: 14px;
+
+        height: 6.4rem;
+    }
+
+    .line-storage2{
+        width: 100px;
+    }
+
+    .space-left{
+        position: absolute;
+        left: 5.4rem;
+        top: 128px;
+        bottom: 12px;
+        right: 0px;
+
+        width: 10rem;
+        height: 3rem;
+        margin-right: 4px;
+
+    }
+
+
+    .space-left p:nth-child(1){
+        font-size: 2.7rem;
+    }
+
+
+    .space-left p:nth-child(2){
+        font-size: 0.8rem;
+    }
+
+    .space-left::after{
+        display:none;
+    }
+
+    .attribution{
+        grid-column: 1/5;   
+    }
+    
+}
